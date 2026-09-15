@@ -9,13 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="brand/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16x16.png">
 </head>
 <body>
-
+  <!-- para que las hojas caigan en toda la landing 
 <div class="leaves-layer" id="leavesLayer" aria-hidden="true"></div>
-
+-->
 <header class="nav">
-  <a href="#top" class="nav__brand">Andrea A.</a>
+  <a href="#top" class="nav__brand"><img src="brand/andrea-a-mark-transparent.png" alt="Logo web A."></a>
   <nav class="nav__links">
     <a href="#servicios">Servicios</a>
     <a href="#proceso">Cómo trabajo</a>
@@ -32,9 +35,12 @@
 
   <!-- HERO -->
   <section class="hero">
+    <!-- para que las hojas solo caigan dentro de HERO -->
+    <div class="leaves-layer" id="leavesLayer" aria-hidden="true"></div>
+
     <div class="hero__content">
       <p class="hero__kicker">Diseño y desarrollo web</p>
-      <h1 class="hero__title">Tu web, hecha a tu medida,<br> de principio a fin.</h1>
+      <h1 class="hero__title">Tu web <br>a tu medida<br> de principio a fin.</h1>
       <p class="hero__text">
         Diseño y construyo páginas web pensadas para ti, y te acompaño en todo el camino: desde
         contratar el dominio y el hosting, hasta mantener tu web viva, segura y funcionando
@@ -45,7 +51,7 @@
         <a href="#portfolio" class="btn btn--ghost">Ver proyectos</a>
       </div>
     </div>
-    <div class="hero__mark" aria-hidden="true">
+     <!-- <div class="hero__mark" aria-hidden="true">
       <svg viewBox="0 0 400 400" class="hero__leaf-big">
         <path d="M200 30C120 90 60 170 60 250c0 70 60 120 140 120s140-50 140-120c0-80-60-160-140-220z" />
         <path d="M200 30 L200 370" class="hero__leaf-vein" />
@@ -54,7 +60,7 @@
         <path d="M200 220 Q145 240 110 280" class="hero__leaf-vein hero__leaf-vein--thin" />
         <path d="M200 220 Q255 240 290 280" class="hero__leaf-vein hero__leaf-vein--thin" />
       </svg>
-    </div>
+    </div>  -->
   </section>
 
   <!-- PROCESO -->
@@ -132,82 +138,40 @@
       <p>Una muestra de webs que he diseñado y desarrollado a medida.</p>
     </div>
 
-    <div class="slider">
-      <button class="slider--btn slider--btn__prev" aria-label="Proyecto anterior">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m15 18-6-6 6-6" />
-        </svg>
-      </button>
+    <div class="portfolio-panels">
+      <div class="card active" style="background-image:url(assets/proyecto-cafeteria.jpg)" role="button" tabindex="0" aria-label="Ver proyecto: Cafetería">
+        <a class="card-image" href="https://la-hora-del-cafe.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir proyecto La hora del café"></a>
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">01</div>
+          <div class="info"> 
+            <div class="main">Cafetería</div>
+            <div class="sub">Landing de marca</div>
+          </div>
+        </div>        
+      </div>
 
-      <div class="slides__wrapper">
-        <div class="slides">
-          <div class="slide" data-current>
-            <div class="slide__inner">
-              <div class="slide--image__wrapper">
-                <img class="slide--image" src="assets/proyecto-asociacion.jpg" alt="Web de la Asociación Cultural Hijos y Amigos de Alcalá" />
-              </div>
-            </div>
-          </div>
-          <div class="slide__bg" style="--bg: url(assets/proyecto-asociacion.jpg);" data-current></div>
-
-          <div class="slide" data-next>
-            <div class="slide__inner">
-              <div class="slide--image__wrapper">
-                <img class="slide--image" src="assets/proyecto-cafeteria.jpg" alt="Web de cafetería de especialidad" />
-              </div>
-            </div>
-          </div>
-          <div class="slide__bg" style="--bg: url(assets/proyecto-cafeteria.jpg);" data-next></div>
-
-          <div class="slide" data-previous>
-            <div class="slide__inner">
-              <div class="slide--image__wrapper">
-                <img class="slide--image" src="assets/proyecto-paws.jpg" alt="Web de adopciones Paws" />
-              </div>
-            </div>
-          </div>
-          <div class="slide__bg" style="--bg: url(assets/proyecto-paws.jpg);" data-previous></div>
-        </div>
-
-        <div class="slides--infos">
-          <div class="slide-info" data-current>
-            <div class="slide-info__inner">
-              <div class="slide-info--text__wrapper">
-                <div data-title class="slide-info--text"><span>Asociación cultural</span></div>
-                <div data-subtitle class="slide-info--text"><span>Sitio institucional</span></div>
-                <div data-description class="slide-info--text"><span>Agenda, historia y socios en un solo lugar</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="slide-info" data-next>
-            <div class="slide-info__inner">
-              <div class="slide-info--text__wrapper">
-                <div data-title class="slide-info--text"><span>Cafetería</span></div>
-                <div data-subtitle class="slide-info--text"><span>Landing de marca</span></div>
-                <div data-description class="slide-info--text"><span>Carta, salas y reservas con personalidad propia</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="slide-info" data-previous>
-            <div class="slide-info__inner">
-              <div class="slide-info--text__wrapper">
-                <div data-title class="slide-info--text"><span>Paws</span></div>
-                <div data-subtitle class="slide-info--text"><span>Adopciones</span></div>
-                <div data-description class="slide-info--text"><span>Historias y adopciones que enamoran a primera vista</span></div>
-              </div>
-            </div>
+      <div class="card" style="background-image:url(assets/proyecto-asociacion.jpg)" role="button" tabindex="0" aria-label="Ver proyecto: Asociación cultural">
+        <a class="card-image" href="https://hijosyamigosdealcala.org/" target="_blank" rel="noopener noreferrer" aria-label="Abrir proyecto Asociación cultural"></a>
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">02</div>
+          <div class="info">
+            <div class="main">Asociación cultural</div>
+            <div class="sub">Sitio institucional</div>
           </div>
         </div>
       </div>
 
-      <button class="slider--btn slider--btn__next" aria-label="Siguiente proyecto">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m9 18 6-6-6-6" />
-        </svg>
-      </button>
-
-      <div class="loader" id="sliderLoader">
-        <span class="loader__text">0%</span>
+      <div class="card" style="background-image:url(assets/proyecto-camino.png)" role="button" tabindex="0" aria-label="Ver proyecto: Paws">
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">03</div>
+          <div class="info">
+            <div class="main">Camino de Santiago</div>
+            <div class="sub">Asociación</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -223,25 +187,28 @@
       </p>
 
       <div class="contacto__directo">
-        <a href="tel:+34600000000">📞 +34 600 000 000</a>
-        <a href="mailto:ejemplo@gmail.com">✉ ejemplo@gmail.com</a>
+        <a href="tel:+34649650966">📞 +34 649 650 966</a>
+        <a href="mailto:aarandazh@gmail.com">✉ aarandazh@gmail.com</a>
       </div>
 
       <form class="form" id="contactForm">
+        <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI" />
+        <input type="hidden" name="subject" value="Nueva consulta desde la web de Andrea A." />
+        <input type="checkbox" name="botcheck" class="form__honeypot" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="form__row">
           <label>
             <span>Nombre y apellidos</span>
-            <input type="text" name="nombre" required placeholder="Andrea Álvarez" />
+            <input type="text" name="nombre" required />
           </label>
           <label>
             <span>Teléfono</span>
-            <input type="tel" name="telefono" required placeholder="600 000 000" />
+            <input type="tel" name="telefono" required />
           </label>
         </div>
         <div class="form__row">
           <label>
             <span>Email</span>
-            <input type="email" name="email" required placeholder="tunombre@email.com" />
+            <input type="email" name="email" required />
           </label>
           <label>
             <span>¿Cómo prefieres que te contacte?</span>
@@ -257,6 +224,10 @@
           <span>Cuéntame tu proyecto</span>
           <textarea name="mensaje" rows="5" required placeholder="Necesito una web para..."></textarea>
         </label>
+        <label class="form__consent">
+        <input type="checkbox" name="consentimiento" required />
+        <span>He leído y acepto la <a href="politica-privacidad.html" target="_blank" rel="noopener">política de privacidad</a>. Tus datos se usarán únicamente para responder a tu consulta y no se compartirán con terceros.</span>
+        </label>
         <button type="submit" class="btn btn--accent">Enviar consulta</button>
         <p class="form__note" id="formNote"></p>
       </form>
@@ -267,6 +238,7 @@
 
 <footer class="footer">
   <p>Andrea A. — Páginas web a medida</p>
+  <p><a href="politica-privacidad.html">politica de Privacidad</a></p>
   <p>© 2026. Todos los derechos reservados.</p>
 </footer>
 
