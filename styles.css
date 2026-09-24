@@ -292,13 +292,12 @@ h3 {
   gap: 1rem;
 }
 
-/*.hero__mark {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 560px) {
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-*/
 
 /* ==========================================================
    SECTION HEAD (reutilizable)
