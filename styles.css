@@ -293,7 +293,7 @@ h3 {
 }
 
 @media (max-width: 560px) {
-  .hero__actions {
+  .hero {
     flex-direction: column;
     align-items: center;
   }
