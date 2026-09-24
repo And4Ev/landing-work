@@ -855,7 +855,7 @@ h3 {
   .portfolio .slider {
     --slide-width: min(70vw, 260px);
   }
-  .form__row {
+  .form__row input{
     grid-template-columns: 1fr;
   }
 }
