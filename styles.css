@@ -856,7 +856,7 @@ h3 {
     --slide-width: min(70vw, 260px);
   }
   .form__row input{
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 
